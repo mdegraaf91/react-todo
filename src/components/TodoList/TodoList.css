@@ -1,0 +1,9 @@
+.todo__list {
+    padding-top: 4rem;
+    border-top: 1px solid #ccc;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin: 4rem 0;
+    font-size: 1.6rem;
+}

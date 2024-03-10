@@ -1,0 +1,41 @@
+.todo__item {
+  display: flex;
+  gap: 2rem;
+
+  input {
+    display: none;
+
+    &:checked + label {
+      text-decoration: line-through;
+      color: var(--color-grey-light);
+
+      span {
+        background-color: var(--color-blue);
+        border-color: var(--color-blue);
+      }
+    }
+
+    &:hover + label {
+      span {
+        border-color: var(--color-blue);
+      }
+    }
+  }
+
+  label {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    width: 100%;
+
+    span {
+      width: 2rem;
+      height: 2rem;
+      display: inline-flex;
+      border: 2px solid var(--color-grey-light);
+      border-radius: 5px;
+      margin-right: 2rem;
+      transition: var(--base-transition);
+    }
+  }
+}
